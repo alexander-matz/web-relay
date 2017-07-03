@@ -30,7 +30,7 @@ The client has access to two API endpoints
 - `/plain` accepts POST requests for simple and plain (non-templated) e-mails
 - `/template` accepts POST requests for templated e-mails
 
-Common POST infos are:
+Shared POST fields are:
 
 - `secret`: simple (and bad) authentication
 - `from`: required exactly once, sender e-mail address
@@ -44,14 +44,14 @@ and holds a row of values for each instance of the template. Each row follows th
 
 ## Features
 
-(✔ indicates "implemented", ✗ indicates "missing")
+(✓ indicates "implemented", ✗ indicates "missing")
 
-- ✔ plain + templated mails (templates are expanded on the server to save bandwidth)
-- ✔ shared secret authorization
+- ✓ plain + templated mails (templates are expanded on the server to save bandwidth)
+- ✓ shared secret authorization
 - ✗ filter by sender
 - ✗ other nice filters
 
-#$ License
+## License
 
 This project is licensed under MIT license which allows use of this application for
 non-commercial as well as commercial use. See LICENSE for more information.
